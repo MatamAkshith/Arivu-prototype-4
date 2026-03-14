@@ -1,0 +1,133 @@
+/* Arivu Extension - Reference Matched Styles */
+
+:root {
+  --primary-blue: #003B73; /* Dark Navy Blue */
+  --primary-hover: #002a52;
+  --text-dark: #222222;
+  --text-grey: #666666;
+  --border-color: #cccccc;
+  --bg-color: #ffffff;
+  --radius: 6px; /* Slightly sharper radius to match screenshot */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: var(--text-dark);
+}
+
+.container {
+  padding: 24px;
+  background: var(--bg-color);
+  /* Optional: Add a very subtle border if you want the card look inside the popup */
+}
+
+/* --- Header --- */
+header {
+  margin-bottom: 24px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800; /* Extra bold */
+  color: var(--primary-blue);
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-grey);
+  font-weight: 400;
+  margin-left: 2px; /* Align slightly with logo text */
+}
+
+/* --- Form Elements --- */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700; /* Bold labels like screenshot */
+  color: #000;
+  margin-bottom: 6px;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  outline: none;
+  font-family: inherit;
+  
+  /* Standard browser dropdown arrow is fine, or we can enforce styling */
+  appearance: auto; 
+  -webkit-appearance: auto;
+}
+
+input::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+/* Focus States */
+select:focus, input:focus {
+  border-color: var(--primary-blue);
+}
+
+/* --- Button --- */
+.submit-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* --- Error Message (Functionality) --- */
+.error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  font-size: 0.85rem;
+  padding: 10px;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  border: 1px solid #fecaca;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+# Sensitive keys
+.env
+config.js
+
+# Python virtual environment
+venv/
+
+# Temporary files
+temp-styles.css
+temp.html
+temp.js
+
+# System files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arivu - Educational Video Filter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo-section">
+          <svg
+            class="logo-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2L2 7L12 12L22 7L12 2Z"
+              stroke="#003366"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="#003366"
+            />
+            <path
+              d="M2 7V17"
+              stroke="#003366"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 12.5C6 12.5 8 15 12 15C16 15 18 12.5 18 12.5"
+              stroke="#003366"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22 7V10"
+              stroke="#FF6B6B"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h1>Arivu</h1>
+        </div>
+        <p class="tagline">Smart Educational Video Filter</p>
+      </header>
+
+      <form id="filterForm">
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <select id="subject">
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+            <option value="Computer">Computer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="grade">Grade Level:</label>
+          <select id="grade">
+            <option value="High School">High School</option>
+            <option value="College">College</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="duration">Video Length:</label>
+          <select id="duration">
+            <option value="short">Short (&lt;4 min)</option>
+            <option value="medium">Medium (4–20 min)</option>
+            <option value="long">Long (&gt;20 min)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="keywords">Keywords:</label>
+          <input
+            type="text"
+            id="keywords"
+            placeholder="e.g. algebra, world war"
+            autocomplete="off"
+          />
+        </div>
+
+        <button type="submit" class="submit-btn">Filter Videos</button>
+      </form>
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="config.js"></script>
+  </body>
+</html>
